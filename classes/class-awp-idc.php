@@ -23,7 +23,7 @@ class AffiliateWP_IDC_Integration {
 	 *
 	 * @since    1.0.0
 	 */
-	public function __construct($plugin_name, $version) {
+	public function __construct() {
 
 		$this->plugin_name = 'affiliatewp-ignitiondeck-referrals';
 		$this->version = '1.0.0';
