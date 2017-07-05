@@ -29,7 +29,7 @@ class AWP_IDC_Manager {
 		$level_name = $level->level_name;
 
 		// Log affiliate purchase
-		$referral_id = affiliate_wp()->referrals->add( array(
+		$args =  apply_filters('awp_idc_referrals_args', array(
 			'affiliate_id' => $affiliate_id,
 			'amount'       => $price*$affiliate_rate/100,
 			'status'       => 'unpaid',
@@ -38,7 +38,9 @@ class AWP_IDC_Manager {
 			'campaign'     => '',
 			'reference'    => $transaction_id,
 			'visit_id'	   => $visit_id
-		) );
+		), $affiliate_id, $price, $affiliate_rate, $level_name, $transaction_id, $visit_id);
+
+		$referral_id = affwp_add_referral( $args );
 
 		if( $referral_id ) {
 			affiliate_wp()->visits->update( $visit_id, array( 'referral_id' => $referral_id ), '', 'visit' );

@@ -26,7 +26,7 @@ class AffiliateWP_IDC_Integration {
 	public function __construct() {
 
 		$this->plugin_name = 'affiliatewp-ignitiondeck-referrals';
-		$this->version = '1.0.0';
+		$this->version = '1.0.2';
 
 		require_once plugin_dir_path( __FILE__ ) . 'class-awp-idc-manager.php';
 	}
