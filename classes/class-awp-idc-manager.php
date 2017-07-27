@@ -15,6 +15,11 @@ class AWP_IDC_Manager {
 			return;
 		}
 
+		// Don't let users refer themselves
+		if($user_id == affwp_get_affiliate_user_id($affiliate_id)){
+			return;
+		}
+
 		// Get visit ID from cookie
 		$visit_id =  affiliate_wp()->tracking->get_visit_id();
 

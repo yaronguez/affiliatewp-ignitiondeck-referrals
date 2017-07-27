@@ -2,9 +2,9 @@
 /**
 * Plugin Name: AffiliateWP - Ignitiondeck - Referrals
 * Description: Creates an AffiliateWP referral when a user completes an IgnitionDeck Commerce purchase
-* Version:     1.0.2
-* Author:      Wooninjas, yaronguez
-* Author URI:  http://www.wooninjas.com and https://trestian.com
+* Version:     1.0.3
+* Author:      yaronguez
+* Author URI:  https://trestian.com
 * License:     GPL2
 * GitHub Plugin URI:    https://github.com/yaronguez/affiliatewp-ignitiondeck-referrals
  * GitHub Branch:    master
